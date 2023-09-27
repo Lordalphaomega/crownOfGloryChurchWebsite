@@ -3644,7 +3644,7 @@ input[type="radio"] {
   padding-top: 80px;
   padding-left: 0px;
   padding-right: 0px;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
 }
 .ttr_Home_html_column00 {
   border-radius: 0px 0px 0px 0px;
@@ -3707,6 +3707,18 @@ input[type="radio"] {
   padding-bottom: 0px;
   word-wrap: break-word;
 }
+
+.simple-text {
+  font-family: 'Roboto';
+  font-size: 1.286em;
+  line-height:2.11267605633803;
+}
+
+.justify-align {
+  text-align:justify;
+  text-align-last: center;
+}
+
 .ttr_Home_html_column10,
 .ttr_Home_html_column10 p,
 .ttr_Home_html_column10 .tt_link {
