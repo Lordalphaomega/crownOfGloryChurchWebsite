@@ -3505,6 +3505,7 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 #ttr_menu.navbar {
   height: 85px;
@@ -4282,10 +4283,9 @@ input[type="radio"] {
   border-width: 0px 0px 0px 0px;
   box-shadow: none;
   right: auto;
-  top: 210px;
+  /* top: 210px; */
   width: 575px;
   min-height: 250px;
-  position: absolute;
   display: block;
   transform: rotate(0deg);
   -moz-transform: rotate(0deg);
