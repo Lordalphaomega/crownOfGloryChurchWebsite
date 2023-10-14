@@ -6,9 +6,11 @@
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-navbar-active-color: var(--bs-link-hover-color) !important;
   --bs-nav-link-disabled-color: var(--bs-secondary-color);
-  --bs-nav-link-font-size: 1.1rem;
+  --bs-nav-link-font-size: 1rem;
   --bs-nav-link-font-weight: 400;
-  --bs-navbar-nav-link-padding-x: 1rem;
+  --bs-navbar-nav-link-padding-x: 1.5rem;
+  font-family: "Abel", "Arial";
+  text-transform: uppercase;
 }
 .cogc-card {
   --bs-card-title-color: #333;
@@ -41,6 +43,21 @@
 
 .navbar-right {
   margin-left: auto !important;
+}
+
+.cogc-first-bg {
+  background: url(../images/HomeDesktopheader.jpg);
+  background-color: #0000007e;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: Center Center;
+  background-clip: padding-box;
+  border-radius: 0px 0px 0px 0px;
+  border: solid #e7e7e7;
+  border: solid rgba(231, 231, 231, 1);
+  border-width: 0px 0px 0px 0px;
+  box-shadow: none;
+  margin: 0px;
 }
 
 .cogc-second-bg {
