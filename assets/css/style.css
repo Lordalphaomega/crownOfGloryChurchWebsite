@@ -97,13 +97,19 @@
   background: rgba(243, 243, 243, 1);
 }
 
-.totopshow {
-  position: sticky;
-  top: 80%;
-  float: inline-end;
-  margin-inline-end: 20px;
-  width: 40px;
-  right: 30px;
+.back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 2em;
+  text-decoration: none;
+  padding: 0.5em;
+  display: none;
+  z-index: 99;
+}
+
+[dir="rtl"] .back-to-top {
+  right: auto;
+  left: 0;
 }
 
 #prev span {
@@ -831,19 +837,21 @@
 
 .main-logo {
   width: 200px;
-  height: 50px;
+  height: 60px;
   display: block;
-  background: url(../images/logo.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
   overflow: hidden;
   border: 1px solid;
+  padding: 5px;
 }
 
 .main-logo a {
   display: flex;
   color: inherit;
   text-indent: -9999px;
+  background: url(../images/logo.jpg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .ttr_title_position {
