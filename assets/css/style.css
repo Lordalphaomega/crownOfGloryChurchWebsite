@@ -97,6 +97,15 @@
   background: rgba(243, 243, 243, 1);
 }
 
+.totopshow {
+  position: sticky;
+  top: 80%;
+  float: inline-end;
+  margin-inline-end: 20px;
+  width: 40px;
+  right: 30px;
+}
+
 #prev span {
   background-image: url(../images/Leftbutton.png);
   display: block;
