@@ -83,39 +83,45 @@
     <header class="cogc-first-bg-1">
       <div class="container">
         <div class="d-flex mt-5 justify-content-center flex-wrap" style="gap: 10px;">
-          <a
-            HREF=""
-            target="_self"
-            class="btn btn-md btn-default"
-            data-bs-toggle="tooltip"
-            data-bs-placement="bottom"
-            data-bs-html="true"
-            title="God loves His children, and He wants to hear from them. We try to help you to make a good relation with him"
-          >
-            New Believers
-          </a>
-          <a
-            HREF=""
-            target="_self"
-            class="btn btn-md btn-default"
-            data-bs-toggle="tooltip"
-            data-bs-placement="bottom"
-            data-bs-html="true"
-            title="Prayer lies at the heart of our spiritual journey at Crown of Glory Church."
-          >
-            PRAYER
-          </a>
-          <a
-            HREF=""
-            target="_self"
-            class="btn btn-md btn-default"
-            data-bs-toggle="tooltip"
-            data-bs-placement="bottom"
-            data-bs-html="true"
-            title="We stand firmly upon the truth of the Holy Scriptures as the ultimate guide for faith and life."
-          >
-            BELIEFS
-          </a>
+          <h3>
+            <a
+              HREF=""
+              target="_self"
+              class="btn btn-md btn-default"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-html="true"
+              title="God loves His children, and He wants to hear from them. We try to help you to make a good relation with him"
+            >
+              New Believers
+            </a>
+          </h3>
+          <h3>
+            <a
+              HREF=""
+              target="_self"
+              class="btn btn-md btn-default"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-html="true"
+              title="Prayer lies at the heart of our spiritual journey at Crown of Glory Church."
+            >
+              PRAYER
+            </a>
+          </h3>
+          <h3>
+            <a
+              HREF=""
+              target="_self"
+              class="btn btn-md btn-default"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-html="true"
+              title="We stand firmly upon the truth of the Holy Scriptures as the ultimate guide for faith and life."
+            >
+              BELIEFS
+            </a>
+          </h3>
         </div>
       </div>
     </header>
@@ -206,9 +212,19 @@
       s.parentNode.insertBefore(wf, s);
     })();
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    if(window.outerWidth < 800)
+    {
+      [...tooltipTriggerList].forEach((item) => {
+        item.addEventListener('click',(e) => {
+          e.preventDefault();
+        })
+        item.setAttribute('title', `<a class="text-light" href="${item.getAttribute('href')}">${item.textContent}</a><br/>${item.getAttribute('title')}`);
+        // item.setAttribute('href', 'javascript:void(0);');
+      });
+    }
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl,{
       boundary: document.body // or document.querySelector('#boundary')
-    }))
+    }));
   </script>
 </body>
 
