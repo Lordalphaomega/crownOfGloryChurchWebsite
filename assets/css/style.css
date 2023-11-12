@@ -91,7 +91,7 @@
   --bs-btn-hover-border-color: #cccccc;
   border-width: 0px 0px 0px 0px;
   padding: 10px 20px;
-  border-radius: 0px;
+  /* border-radius: 0px; */
 }
 
 .navbar-right {
@@ -111,6 +111,21 @@
   border-width: 0px 0px 0px 0px;
   box-shadow: none;
   margin: 0px;
+}
+
+.cogc-first-bg-1
+{
+  background: url(../images/HomeDesktopheader1.jpg);
+  background-color: #ebe6d8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: Center bottom;
+  height: 500px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
 
 .cogc-first-inner {
@@ -189,6 +204,13 @@
   text-align:justify;
   text-align-last: center;
 }
+@media only screen and (max-width: 1400px) {
+  .container-xxl {
+    padding: 0px;
+    width: 100%;
+  }
+}
+
 
 @media only screen and (max-width: 600px) {
   .cogc-first-black-inner {
