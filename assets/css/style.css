@@ -215,6 +215,14 @@
   text-align:justify;
   text-align-last: auto;
 }
+
+@media only screen and (min-width: 1468px) {
+  .cogc-first-bg-1 {
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+}
+
 @media only screen and (max-width: 1400px) {
   .container-xxl {
     padding: 0px;
