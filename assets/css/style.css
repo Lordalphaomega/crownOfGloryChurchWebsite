@@ -98,6 +98,10 @@
   margin-left: auto !important;
 }
 
+.wo-decoration-link {
+  color: #000;
+  text-decoration: none;
+}
 .cogc-first-bg {
   background: url(../images/HomeDesktopheader.jpg);
   background-color: #0000007e;
