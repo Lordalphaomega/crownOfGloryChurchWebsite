@@ -1,3 +1,15 @@
+function goToContent(selector)
+{
+  document.getElementById(selector).scrollIntoView();
+}
+
+function goToMainContent()
+{
+  document.getElementById("main-content").scrollIntoView({
+    behavior: "smooth"
+  });
+}
+
 $(document).ready(function(){
 
 /*************** Checkbox script ***************/

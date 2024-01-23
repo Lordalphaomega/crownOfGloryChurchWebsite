@@ -37,6 +37,22 @@
   --bs-card-title-color: #333;
 }
 
+.card .card-badge {
+  position:absolute;
+  top:0;
+  margin: 10px;
+  padding-block: 8px;
+}
+
+.archive-image {
+  height: 150px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.pe-pointer{
+  cursor: pointer;
+}
 .card-body img {
   max-width: 100%;
 }
